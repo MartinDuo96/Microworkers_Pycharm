@@ -45,6 +45,13 @@ def save_clipboard(string):
     pyperclip.copy(string)
     time.sleep(1)
 
+def keyboard_ctrl_c():
+    keyboard.press(Key.ctrl)
+    keyboard.press('c')
+    keyboard.release(Key.ctrl)
+    keyboard.release('c')
+    time.sleep(1)
+
 def keyboard_ctrl_v():
     keyboard.press(Key.ctrl)
     keyboard.press('v')
