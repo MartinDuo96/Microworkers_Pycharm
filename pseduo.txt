@@ -1,0 +1,13 @@
+Microworker Zoom Size = 150%
+Excel Zoom Size = 100%
+
+
+# Task depending on Employer id (Python)
+# get URL for Video
+# Open Youtube
+# Watch Youtube
+# Like, Subscribe, comment
+# Screenshot
+# Add screenshot together
+# Upload Screenshot / or link to imgur
+# Confirm
