@@ -55,6 +55,9 @@ else:
     time.sleep(int(sec))
     print('waited:', str(int(sec)))
 
+# like video
+
+
 # screenshot proof
 getId.mouse_left(39, 325)
 getId.scroll_down()
