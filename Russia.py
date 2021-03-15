@@ -1,6 +1,8 @@
 import Youtube
 import getId
 import time
+import screenshot
+
 # XeniaDidThat
 
 # Extract the URL from Text
@@ -53,6 +55,9 @@ else:
     time.sleep(int(sec))
     print('waited:', str(int(sec)))
 
-# proof
-# screenshot
+# screenshot proof
+getId.mouse_left(39, 325)
+getId.scroll_down()
+screenshot.takeScreenshot()
+
 # Add screenshot

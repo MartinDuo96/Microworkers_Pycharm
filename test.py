@@ -1,4 +1,7 @@
-lst = [1, 2, 3, 4, 5]
+import pyautogui
+import tkinter as tk
+import getId
 
-for index in lst[2:4]:
-    print(index)
+getId.mouse_left(583, 1051)
+getId.mouse_left(732, 128)
+getId.scroll_down()

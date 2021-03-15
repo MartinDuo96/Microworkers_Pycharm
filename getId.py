@@ -59,6 +59,17 @@ def keyboard_ctrl_v():
     keyboard.release('v')
     time.sleep(1)
 
+def zoo_out():
+    keyboard.press(Key.ctrl)
+    keyboard.press('-')
+    keyboard.release(Key.ctrl)
+    keyboard.release('-')
+    time.sleep(1)
+
+def scroll_down():
+    mouse.scroll(0, -1)
+    time.sleep(1)
+
 def update_clipboard():
     global clipboard
     clipboard = pyperclip.paste()
