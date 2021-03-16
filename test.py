@@ -1,7 +1,6 @@
-import pyautogui
-import tkinter as tk
-import getId
+a = {'b': []}
+lst = []
 
-getId.mouse_left(583, 1051)
-getId.mouse_left(732, 128)
-getId.scroll_down()
+print(a['b'])
+if not a['b']:
+    print('empty')

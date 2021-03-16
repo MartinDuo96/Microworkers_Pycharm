@@ -70,11 +70,54 @@ def scroll_down():
     mouse.scroll(0, -1)
     time.sleep(1)
 
+def scroll_end():
+    mouse.scroll(0, -50)
+    time.sleep(1)
+
+# this is the clipboard
 def update_clipboard():
     global clipboard
     clipboard = pyperclip.paste()
     print('This is clipboard', clipboard)
     time.sleep(1)
+
+def select_all():
+    keyboard.press(Key.ctrl)
+    keyboard.press('a')
+    keyboard.release(Key.ctrl)
+    keyboard.release('a')
+    time.sleep(1)
+
+def new_tab():
+    keyboard.press(Key.ctrl)
+    keyboard.press('t')
+    keyboard.release(Key.ctrl)
+    keyboard.release('t')
+    time.sleep(1)
+
+def type_youtube():
+    keyboard.press('y')
+    keyboard.release('y')
+    keyboard.press('o')
+    keyboard.release('o')
+    keyboard.press('u')
+    keyboard.release('u')
+    keyboard.press('t')
+    keyboard.release('t')
+    keyboard.press('u')
+    keyboard.release('u')
+    keyboard.press('b')
+    keyboard.release('b')
+    keyboard.press('e')
+    keyboard.release('e')
+    keyboard.press('.')
+    keyboard.release('.')
+    keyboard.press('c')
+    keyboard.release('c')
+    keyboard.press('o')
+    keyboard.release('o')
+    keyboard.press('m')
+    keyboard.release('m')
 
 def get_employer_id():
     lst = clipboard.split('_')

@@ -9,12 +9,14 @@ def get_duration(url):
 
     part_string = 'contentDetails'
     #url = 'https://www.youtube.com/watch?v=OL0ssUpvBmY&ab_channel=OnlineCheckWriter'
-    video_id = url[url.index('v=')+2:url.index('&ab')]
+    #url = 'https://www.youtube.com/watch?v=JRJi-deNMBE&t=11s&ab_channel=XeniaDidThat'
+    video_id = url[url.index('v=')+2:url.index('&')]
 
     response = youtube.videos().list(
         part=part_string,
         id=video_id
     ).execute()
+    print(response)
 
     duration = response['items'][0]['contentDetails']['duration']
     duration = duration.strip('PT')
