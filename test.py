@@ -1,4 +1,6 @@
-lst = [1, 2, 3, 4, 5]
+a = {'b': []}
+lst = []
 
-for index in lst[2:4]:
-    print(index)
+print(a['b'])
+if not a['b']:
+    print('empty')

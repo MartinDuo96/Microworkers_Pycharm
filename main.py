@@ -24,19 +24,15 @@ getId.keyboard_ctrl_f()
 getId.save_clipboard(search)
 getId.keyboard_ctrl_v()
 getId.keyboard_enter()
-getId.mouse_right(1739, 635)
-getId.mouse_left(1763, 754)
-getId.mouse_left(1646, 756)
+
+
+getId.mouse_right(1616, 904)
+getId.mouse_left(1654, 637)
+getId.mouse_left(1541, 637)
 getId.update_clipboard()
 getId.get_employer_id()
 
 
-
-
-
-
-'''
 path = r'C:\Users\marti\OneDrive\Desktop\Microworker\Microworker_1.xlsx'
 wb = load_workbook(path)
 ws = wb['Tabelle1']
-'''
